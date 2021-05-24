@@ -1,0 +1,116 @@
+  <!DOCTYPE html>
+<!-- This is based on DillingerLee's great template here:
+https://github.com/Team-Code/KA_Offline -->
+<html> 
+ <head>
+ 
+</head>
+ <body>
+    <p align="center"> 
+	<!--This draws the Canvas on the webpage -->
+      <canvas id="mycanvas"></canvas> 
+    </p>
+ </body>
+ 
+ <!-- Run all the JavaScript stuff -->
+ <!-- Include the processing.js library -->
+ <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+ <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+ 
+ <script>
+    var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(400, 400); 
+        frameRate(30);
+        
+        // ProgramCodeGoesHere
+fill(60, 0, 255);
+
+
+
+fill(0, 0, 0);
+ellipse(200, 200, 375, 375);
+fill(60, 0, 255);
+triangle(200, 104, 280, 280, 120, 280);
+textSize (50);
+text ("fucking kill me", 30, 400);
+
+
+textSize(12);
+
+mouseClicked = function() {
+
+var randomGen = random (0,1);
+
+if (randomGen < 0.1){
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("shits your pants", 159, 229); }
+else if (randomGen < 0.2){
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("gives you a hug", 159, 229); }
+else if (randomGen < 0.3){
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("drinks water", 159, 229); }
+else if (randomGen < 0.4){
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("last online: 4 years ago", 159, 229); }
+else if (randomGen < 0.5){
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("fucking dies", 159, 229); }
+else if (randomGen < 0.6){
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("is actually gay", 159, 229); }
+else if (randomGen < 0.7){
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("leaves hummus", 159, 229); }
+else if (randomGen < 0.8){
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("kills herself", 159, 229); }
+else if (randomGen < 0.9){
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("hurts you mildy", 159, 229); }
+else {
+    fill(60, 0, 255);
+    triangle(200, 104, 280, 280, 120, 280);
+    fill(255, 255, 255);
+    text("alex", 176, 200);
+    text("lives with hummus", 159, 229); }
+
+};
+
+    }};
+
+    // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("mycanvas"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
+
+</html>

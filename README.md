@@ -1,2 +1,2 @@
-# shit-to-the-2nd-power
+# shit²
 my shitty code from when i was starting (mainly just an archive)
